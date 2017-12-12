@@ -1,9 +1,11 @@
 import {combineReducers} from 'redux';
-import credentials from './loginReducer';
+import crawledData from './crawledDataReducer';
+import courses from './courseReducer';
 import ajaxCallsInProgress from './ajaxStatusReducer';
 
 const rootReducer = combineReducers({
-  credentials,
+  crawledData,
+  courses,
   ajaxCallsInProgress
 });
 export default rootReducer;

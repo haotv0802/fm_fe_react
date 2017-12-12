@@ -1,19 +1,14 @@
 import React, {PropTypes} from 'react';
 import Header from "./common/Header";
 import {connect} from 'react-redux';
-import Favicon from 'react-favicon';
-import './App.css';
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <div className="header" style={{width: "100%"}}>
-          <Header loading={this.props.loading}/>
-        </div>
-        <div className="content">
-          {this.props.children}
-        </div>
+      <div className="container-fluid">
+        <Header loading={this.props.loading}/>
+        <br/>
+        {this.props.children}
       </div>
     );
   }

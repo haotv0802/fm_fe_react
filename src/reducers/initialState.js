@@ -1,4 +1,5 @@
 export default {
-  credentials: {email: 'andrea', password: '', otp: 'OTP'},
+  crawledData: [],
+  courses: [],
   ajaxCallsInProgress: 0
 };

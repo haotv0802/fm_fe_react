@@ -1,8 +1,6 @@
 import React, {PropTypes} from 'react';
-import {Link} from 'react-router';
 
-class UseCasesPage extends React.Component {
-
+class ChartPage extends React.Component {
   constructor(props, context) {
     super(props, context);
   }
@@ -10,20 +8,20 @@ class UseCasesPage extends React.Component {
   render() {
     return (
       <div className="panel panel-info">
-        <div className="panel-body"  >
-          <h1>Use Cases</h1>
+        <div className="panel-heading">
+          {this.props.pageTitle}
         </div>
       </div>
     );
   }
 }
 
-UseCasesPage.propTypes = {
+ChartPage.propTypes = {
   pageTitle: PropTypes.string.isRequired
 };
 
-UseCasesPage.defaultProps = {
-  pageTitle: "Use Cases"
+ChartPage.defaultProps = {
+  pageTitle: "Sellers In Chart"
 };
 
-export default UseCasesPage;
+export default ChartPage;

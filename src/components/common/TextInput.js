@@ -7,8 +7,9 @@ const TextInput = ({name, label, width, onChange, placeholder, value, error}) =>
   }
 
   return (
-    <div className={wrapperClass} style={{display: "inline-block"}}>
+    <div className={wrapperClass}>
       <label htmlFor={name}>{label}</label>
+      <div className="field">
         <input
           type="text"
           name={name}
@@ -19,6 +20,7 @@ const TextInput = ({name, label, width, onChange, placeholder, value, error}) =>
           style={{width: width}}
         />
         {/*{error & <div className="alert alert-danger">{error}</div>}*/}
+      </div>
     </div>
   );
 };
